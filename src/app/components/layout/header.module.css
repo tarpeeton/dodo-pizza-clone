@@ -1,0 +1,56 @@
+.header {
+	width: 100%;
+	padding: 12px calc(50% - 640px);
+	border-bottom: 1px solid rgb(243, 243, 247);
+	z-index: 101;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	height: 52px;
+	-webkit-box-align: center;
+	align-items: center;
+}
+.language {
+	background: rgb(255, 105, 0);
+	border-radius: 50%;
+	display: inline-block;
+    position: absolute;
+    padding: 0px 6px;
+    top: -6px;
+    left: calc(50% + 4px);
+    background: rgb(255, 105, 0);
+    border: 1.5px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+}
+.languagebutton {
+	display: flex;
+	align-items: center;
+}
+.live::before {
+	content: " ";
+	background: red;
+	width: 9px;
+	height: 9px;
+	position: absolute;
+	left: 0px;
+	bottom: 6px;
+	border-radius: 50%;
+	animation: 2s ease-in-out 0s infinite normal none running pulse;
+}
+
+@keyframes pulse {
+0% {
+    background: rgb(255, 0, 0);
+}
+50% {
+    background: rgba(255, 0, 0, 0.3);
+}
+100% {
+    background: rgb(255, 0, 0);
+}
+}

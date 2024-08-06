@@ -1,0 +1,23 @@
+{
+  "React TypeScript Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${1:Props} {",
+      "  ${2:/* props definition */}",
+      "}",
+      "",
+      "const ${3:ComponentName}: React.FC<${1:Props}> = ({ ${4:/* props */} }) => {",
+      "  return (",
+      "    <div>",
+      "      ${5:/* JSX content */}",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${3:ComponentName};"
+    ],
+    "description": "Create a React functional component with TypeScript and props interface"
+  }
+}
